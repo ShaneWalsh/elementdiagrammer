@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/1999/xhtml">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>Diagrammer</title>
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    <table id="mainTable" style="background-color: #FFFFFF" class="noDisplay">
+      <thead>
+      </thead>
+      <tbody>
+        <tr>
+          <td> <!--  816 = 51 tiles 512 = 32 tiles -->
+            <!-- lefthand nav here -->
+            <div class="container">
+              <div class="" style="position:absolute; display:flex;">
+                <div id="sideContainter" class="" style="width:320px;">
+                  <div id="attributesContainer" style="height:500px;width:320px;overflow-y:scroll;display:grid;">
+                    <span>label:
+                      <input type="text" value="some sort of nav"></input>
+                    </span>
+                    <span> attributenameanditsvery long
+                      <textarea rows="4" cols="40">
+                      when an element is selected, its properties should display over here for editing.
+                      </textarea>
+                    </span>
+                    <input type="text" value="Below this should be buttons to create new element, new connections. (drag and drop one day)"></input>
+                  </div>
+                  <span>
+                    <button id="createAttribute" value="Add Attribute" onclick="addAttribute()">Add Attribute</button>
+                    <input id="createAttributeInput" type="text" value="defaultText"></input>
+                  </span>
+                  <button id="createElement" value="Create Element">Create Element</button>
+                  <button id="copyElement" value="Create Element">Copy Selected</button>
+                  <button id="removeSelected" value="Remove Selected">Remove Selected</button>
+                  <button id="clearSelectedConnections" value="Clear Selected Connections">Clear Selected Connections</button>
+                  <button id="recenter" value="Recenter">Recenter</button>
+                  <div>
+                    <input id="importExportInput" type="text" value="importExport"></input>
+                    <button id="exportConfig" value="import" onclick="importConfig()">import</button>
+                    <button id="importConfig" value="export" onclick="exportConfig()">export</button>
+                  </div>
+                </div>
+                <div id="gcc" class="canvasContainer" style="background-color: #e0e0e0">
+                  <!-- canvas -->
+                  <canvas id="canvasDiagrammer" width="920" height="620" ></canvas>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+
+      <script src="./dist/entry.min.js"></script>
+      <script>
+      </script>
+</body>
+
+<!--
+
+Sounds used, CC licence :D
+https://www.freesound.org/people/scaevola/sounds/333261/
+
+-->
+
+
+</html>

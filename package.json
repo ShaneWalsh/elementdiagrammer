@@ -1,0 +1,26 @@
+{
+  "name": "Diagrammer",
+  "version": "1.0.0",
+  "description": "Show Class diagrammes in a flexiable ui.",
+  "main": "dist/xpathProcessor.min.js",
+  "scripts": {
+    "dev": "webpack --mode development ",
+    "devw": "webpack --mode development --watch",
+    "build": "webpack --mode production "
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "lodash": "^4.17.5",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^3.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "circular-json": "^0.5.4",
+    "jquery": "^3.3.1"
+  }
+}
